@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operacoes</title>
+    
+
+</head>
+<body>
+   <script>
+    let valor1 = prompt("Digite um valor");
+    let valor2 = prompt("Digite outro valor");
+    let operacao = prompt("Digite a operação")
+    const soma = "+";
+    const sub = "-";
+    const divi = "/";
+    const multi = "*";
+    switch(operacao){
+        case soma:
+            val = parseFloat(valor1)+parseFloat(valor2);
+            break;
+        case sub:
+            val = parseFloat(valor1) - parseFloat(valor2);
+            break;
+        case divi:
+            val = parseFloat(valor1) / parseFloat(valor2);
+            break;
+        case multi:
+            val = parseFloat(valor1) * parseFloat(valor2);
+            break;
+    }
+    alert(val)
+   </script>
+    
+</body>
+</html>
