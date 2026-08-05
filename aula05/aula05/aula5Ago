@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo onmouseover</title>
+
+    <style>
+        #caixa{
+            width:200px;
+            height: 100px;
+            background-color:lightblue;
+            text-align:center;
+            line-height:100px;
+            font-weight:bold;
+            cursor:pointer;
+
+        }
+
+        #resultado{
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            min-height: 50 px;
+
+        }
+
+    </style>
+    <script>
+        function mouseSobre(){
+            let divResultado = document.getElementById("resultado");
+            divResultado.innerHTML +=  "mouse sobre. <br/>"
+        }
+
+        function mouseFora(){
+            let divResultado = document.getElementById('resultado');
+            divResultado.innerHTML += "mouse fora. <br/>"
+        }
+    </script>
+
+</head>
+
+<body>
+    <h2> Eventos onmouser e onmouseout </h2>
+    <div id="caixa" onmouseover = 'mouseSobre()'
+    onmouseout = "mouseFora()">
+    Passe o mouse aqui
+    </div>
+    <div id="resultado"></div>
+    
+</body>
+</html>
